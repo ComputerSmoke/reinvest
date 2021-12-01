@@ -1,0 +1,7 @@
+dependencies:
+  - QuickSwap/quickswap-core
+dotenv: .env
+compiler:
+  solc:
+    remappings:
+      - '@uniswap=QuickSwap/quickswap-core'
