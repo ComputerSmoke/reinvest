@@ -1,3 +1,6 @@
+//SPDX-License-Identifier: MIT
+pragma solidity >=0.5.0;
+
 interface StakingDualRewards {
     // Views
     function lastTimeRewardApplicable() external view returns (uint256);
