@@ -5,3 +5,4 @@ compiler:
   solc:
     remappings:
       - '@uniswap=QuickSwap/quickswap-core'
+
