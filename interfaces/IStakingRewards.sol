@@ -1,17 +1,14 @@
 //SPDX-License-Identifier: MIT
 pragma solidity >=0.5.0;
 
-interface StakingDualRewards {
+interface IStakingRewards {
     // Views
     function lastTimeRewardApplicable() external view returns (uint256);
 
-    function rewardPerTokenA() external view returns (uint256);
-    function rewardPerTokenB() external view returns (uint256);
+    function rewardPerToken() external view returns (uint256);
 
-    function earnedA(address account) external view returns (uint256);
+    function earned(address account) external view returns (uint256);
 
-    function earnedB(address account) external view returns (uint256);
-   
     function totalSupply() external view returns (uint256);
 
     function balanceOf(address account) external view returns (uint256);

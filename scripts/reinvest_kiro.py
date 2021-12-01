@@ -10,7 +10,7 @@ wmatic = interface.IERC20(wmaticAddress)
 routerAddress = "0xa5E0829CaCEd8fFDD4De3c43696c57F7D7A678ff"
 router = interface.IUniswapV2Router02(routerAddress)
 rewardsAddress = "0xfF22Bf1f778BcD6741D823b077285533EC582F78"
-rewards = interface.StakingDualRewards(rewardsAddress)
+rewards = interface.IStakingDualRewards(rewardsAddress)
 uv2Address = "0x3f245C6f18442Bd6198d964C567a01BD4202e290"
 uv2 = interface.IERC20(uv2Address)
 
