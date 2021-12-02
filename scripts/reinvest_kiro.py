@@ -38,7 +38,7 @@ def addLiquidity():
     rate = kiroOwned / router.getAmountOut(kiroOwned, kiroAddress, wmaticAddress, {"from": account})
     kiroMin = wmaticOwned * rate * 0.99
     wmaticMin = kiroOwned / rate * 0.99
-    router.addLiquidity(kiroAddress, wmaticAddress, kiroOwned, wmaticOwned, kiroMin, wmaticMin, account, getDeadline(), {"from": account})[2]
+    router.addLiquidity(kiroAddress, wmaticAddress, kiroOwned, wmaticOwned, kiroMin, wmaticMin, account, getDeadline(), {"from": account})
     print("Added liquidity")
 
 
